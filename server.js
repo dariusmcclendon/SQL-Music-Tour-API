@@ -8,6 +8,9 @@ const { Sequelize } = require('sequelize')
 require('dotenv').config()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+app.use('/bands',require('./controllers/bands_controller'))
+app.use('/events',require('./controllers/events_controller'))
+app.use*('/stages',require('./controllers/stages_controller')
 
 
 // ROOT
